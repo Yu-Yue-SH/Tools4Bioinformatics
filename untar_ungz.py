@@ -5,6 +5,7 @@ decompress the tar file and the gz file
 
 import tarfile
 import gzip
+import shutil
 
 
 def untar(tar_file, output_dic):
@@ -15,7 +16,7 @@ def untar(tar_file, output_dic):
 def ungz(gz_file, output_file):
     with gzip.open(gz_file, 'rb') as f:
         with open(output_file, 'wb') as out:
-            out.write(f.read())
+            shutil.copyfileobj(f, out)
 
 
 if __name__ == '__main__':
