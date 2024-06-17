@@ -14,3 +14,17 @@ decompress the tar file and the gz file
 
    ungz the gz_file to the output_file
 
+## mex_to_h5.R
+
+change 10X mex format files into h5 format files
+
+## cellbender.sh
+
+remove background using cellbender, using conda environment:
+
+```shell
+conda create -n cellbender python=3.7
+conda activate cellbender
+pip install cellbender
+```
+
