@@ -62,3 +62,17 @@ def stratify_expression_levels(
 change Ensembl ids into symbols in a data.frame with genes by samples
 
 available for multi-species and multi-genome-version
+
+## gsva_ssgsea.R
+
+run_gsva and run_ssgsea: 
+
+* inputs:
+
+  mat: gene expression matrix with genes in rows and samples in columns
+  gs: gene sets
+
+* output:
+
+  gsva_es or ssgsea_es: enrichment scores with samples in columns
+
